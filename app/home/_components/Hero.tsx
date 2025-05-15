@@ -30,15 +30,15 @@ const HeroWithNavbar = () => {
 
   // Navbar effects
   useEffect(() => {
-    const handleDocumentClick = (event) => {
+    const handleDocumentClick = (event: MouseEvent) => {
       const menuWrapper = document.querySelector(".mobile-menu-wrapper");
       const menuContainer = document.querySelector(".mobile-menu-area");
 
       if (
         menuWrapper &&
         menuContainer &&
-        !menuContainer.contains(event.target) &&
-        menuWrapper.contains(event.target)
+        !menuContainer.contains(event.target as Node) &&
+        menuWrapper.contains(event.target as Node)
       ) {
         setMobileMenuOpen(false);
       }
