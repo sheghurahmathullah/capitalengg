@@ -15,6 +15,7 @@ import { useScroll } from "./lib/use-scroll";
 import { cn } from "../../lib/utils";
 import HorizontalScroll from "../../components/global/HorizontalScroll";
 import Carousel from "./_components/Carousel";
+import Footer1 from "@/components/footers/Footer8";
 
 const Page = () => {
   const { state, scrollingThreshold, setScrolling, setState } = useScroll();
@@ -100,7 +101,7 @@ const Page = () => {
           scrollingThreshold == 0 ? "visible h-auto" : "invisible -z-10"
         )}
       >
-        <Navbar />
+        {/* <Navbar /> */}
         <Hero />
         <div ref={aboutRef}>
           <About />
@@ -128,6 +129,7 @@ const Page = () => {
         <Testimonials />
         <FounderInsights/>
         <FAQ />
+        <Footer1/>
       </div>
     </main>
   );

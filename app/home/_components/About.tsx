@@ -5,6 +5,7 @@ import Image from "next/image";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { useScroll } from "../lib/use-scroll";
+import Link from "next/link";
 
 const About = () => {
   const sectionRef = useRef(null);
@@ -160,21 +161,23 @@ const About = () => {
             className="text-xs lg:text-sm font-normal w-80 md:w-[80%] lg:w-[72%] mt-1 lg:mt-4"
           >
             Capital Engineering Consultancy is a highly respected firm operating
-            since 2006, with offices across the UAE, Oman, India, KSA, and the
-            UK. Specializing in Engineering Consultancy, Residential &
-            Commercial Design, Industrial Developments, Infrastructure, Oil &
-            Gas, Environmental Solutions, and BIM services, we take pride in our
-            bold and innovative approach. Our commitment to excellence has
-            earned us a prestigious clientele, including the Sharjah Ruler’s
-            Office, real estate developers, corporations, contractors, and
-            individuals. From schools and villas to industrial plants and
-            large-scale projects, our designs are known for their uniqueness,
-            precision, and responsiveness to client needs.
+            since 2006, with offices across the UAE, Oman, India and the KSA.
+            Specializing in Engineering Consultancy, Residential & Commercial
+            Design, Industrial Developments, Infrastructure, Oil & Gas,
+            Environmental Solutions, and BIM services, we take pride in our bold
+            and innovative approach. Our commitment to excellence has earned us
+            a prestigious clientele, including the Sharjah Ruler’s Office, real
+            estate developers, corporations, contractors, and individuals. From
+            schools and villas to industrial plants and large-scale projects,
+            our designs are known for their uniqueness, precision, and
+            responsiveness to client needs.
           </p>
           <div ref={buttonRef}>
-            <Button className="bg-white text-black border border-black hover:text-white hover:bg-red-600 rounded-full mt-4">
+           <Link href="/about">
+           <Button className="bg-white text-black border border-black hover:text-white hover:bg-red-600 rounded-full mt-4">
               Know more
             </Button>
+           </Link>
           </div>
         </div>
       </div>

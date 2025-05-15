@@ -70,22 +70,23 @@ const FounderInsights: React.FC = () => {
             <span className="uppercase tracking-wider text-blue-300 font-medium text-sm">
               Leadership Insights
             </span>
-            <h2 className="mt-2 text-4xl font-bold tracking-tight sm:text-5xl">
+            <h2 className="mt-2 text-4xl font-bold tracking-tight sm:text-5xl text-white">
               Words from Our Founder
             </h2>
             
-            <div className="mt-6 space-y-4 text-lg leading-relaxed">
-              <p>
-                In this exclusive video, our Managing Director, <strong>Mr. Balaskandan Raghunathan</strong>, 
-                shares his expert insights on Sugee, its growth, vision, and the impact it has made in the industry.
-              </p>
-              <p>
-                Watch as Mr. Raghunathan talks about the company's journey, challenges, and the future of Sugee, 
-                offering a deeper look at what drives the success of the business.
-              </p>
-              <p className="font-medium text-blue-200">
-                His perspective highlights the dedication and passion that fuel our mission.
-              </p>
+            <div className="mt-6 space-y-4 text-lg leading-relaxed text-white">
+            <p className='text-white'>
+  In this exclusive video, our Managing Director, <strong>Mr. Balaskandan Raghunathan</strong>, 
+  shares his expert insights on organizational growth, vision, and the impact of leadership in driving success.
+</p>
+<p className='text-white'>
+  Watch as Mr. Raghunathan discusses the journey, challenges, and future prospects, 
+  offering a deeper look into the factors that shape a thriving business.
+</p>
+<p className="font-medium text-blue-200">
+  His perspective highlights the dedication and passion that fuel our mission and commitment to excellence.
+</p>
+
             </div>
             
             <button 

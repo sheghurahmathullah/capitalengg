@@ -134,7 +134,7 @@ export default function Testimonials() {
           </p>
         </div>
 
-        <div ref={carouselRef} className="mt-8">
+        <div ref={carouselRef} className="mt-8 ">
           <ImageCarousel items={testimonials} />
         </div>
       </div>

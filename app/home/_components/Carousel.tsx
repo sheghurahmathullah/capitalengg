@@ -36,7 +36,7 @@ export default function Carousel() {
     {
       id: 3,
       name: "Tesoro Casa",
-      Category: "Religious",
+      Category: "Commercial",
       description:
         "Interior fit-out of TESORO CASA's Galleria unit by Capital Engineering Consultancy, blending luxury design with brand standards.",
       image: "/projects/Tesoro Casa - Commercial.jpg",
@@ -161,25 +161,20 @@ export default function Carousel() {
     <div
       className="w-full max-w-[88rem] mx-auto px-4 md:px-8 py-0 md:py-8 mt-8 
       relative 
-      bg-gradient-to-br 
-      from-gray-50 
-      to-gray-100 
+      bg-white
       before:absolute 
-      before:top-0 
-      before:left-0 
-      before:right-0 
-      before:bottom-0 
-      before:bg-[linear-gradient(45deg,transparent_25%,rgba(68,68,68,0.05)_50%,transparent_75%)] 
-      before:bg-[size:2rem_2rem] 
-      before:opacity-30 
+      before:inset-0
+      before:bg-[radial-gradient(#e0e0e0_1px,transparent_1px)]
+      before:bg-[length:20px_20px]
+      before:opacity-40
       overflow-hidden"
     >
-      {/* Blueprint-like grid overlay */}
+      {/* Updated dot pattern overlay */}
       <div
         className="absolute inset-0 pointer-events-none 
-        bg-[linear-gradient(rgba(255,255,255,0.1)_1px,transparent_1px)] 
-        [background-size:2rem_2rem] 
-        opacity-30 
+        bg-[radial-gradient(#d1d1d1_1px,transparent_1px)] 
+        [background-size:16px_16px] 
+        opacity-50 
         z-0"
       />
 

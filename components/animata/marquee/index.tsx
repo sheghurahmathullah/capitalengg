@@ -50,7 +50,7 @@ export function Marquee({
           "flex-row": !vertical,
           "flex-col": vertical,
         },
-        className,
+        className
       )}
     >
       {Array(repeat)
@@ -64,6 +64,10 @@ export function Marquee({
               "group-hover:[animation-play-state:paused]": pauseOnHover,
               "[animation-direction:reverse]": reverse,
             })}
+            style={{
+              animation: `${vertical ? "marqueeVertical" : "marquee"} var(--duration) linear infinite ${reverse ? "reverse" : "normal"}`,
+              animationPlayState: pauseOnHover ? "inherit" : "running",
+            }}
           >
             {children}
           </div>

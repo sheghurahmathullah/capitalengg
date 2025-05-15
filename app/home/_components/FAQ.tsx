@@ -21,12 +21,14 @@ const FAQ = () => {
         "We provide comprehensive services including architectural and structural design, MEP engineering, project management, authority approvals, and construction supervision.",
     },
     {
-      question: "How does Capital Engineering Consultancy ensure regulatory compliance for projects?",
+      question:
+        "How does Capital Engineering Consultancy ensure regulatory compliance for projects?",
       answer:
         "Our team works closely with local authorities to secure all necessary permits and approvals, ensuring every project meets legal and safety standards.",
     },
     {
-      question: "Can Capital Engineering Consultancy manage both residential and commercial projects?",
+      question:
+        "Can Capital Engineering Consultancy manage both residential and commercial projects?",
       answer:
         "Yes, we have expertise in handling a wide range of projects including residential buildings, commercial spaces, industrial facilities, and fit-out works.",
     },
@@ -84,7 +86,7 @@ const FAQ = () => {
         >
           Frequently Asked Questions
         </h2>
-        
+
         <div ref={accordionRef} className="w-full space-y-2">
           <Accordion type="single" collapsible className="w-full">
             {faqs.map((faq, index) => (
@@ -93,21 +95,21 @@ const FAQ = () => {
                 value={`faq-${index}`}
                 className="border rounded-lg overflow-hidden transition-all hover:shadow-lg"
               >
-                <AccordionTrigger className="px-6 py-5 text-left hover:no-underline group">
+                <AccordionTrigger className="px-6 py-4 text-left hover:no-underline group">
                   <div className="flex items-center w-full">
                     <div className="w-8 h-8 rounded-full bg-[#211574]/10 flex-shrink-0 flex items-center justify-center mr-4 group-hover:bg-[#e9647c]/20 transition-colors">
-                      <svg 
-                        width="16" 
-                        height="16" 
-                        viewBox="0 0 24 24" 
-                        fill="none" 
+                      <svg
+                        width="16"
+                        height="16"
+                        viewBox="0 0 24 24"
+                        fill="none"
                         className="text-[#211574] group-hover:text-[#e9647c] transition-colors"
                       >
-                        <path 
-                          d="M12 6V12L16 14M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z" 
-                          stroke="currentColor" 
-                          strokeWidth="2" 
-                          strokeLinecap="round" 
+                        <path
+                          d="M12 6V12L16 14M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z"
+                          stroke="currentColor"
+                          strokeWidth="2"
+                          strokeLinecap="round"
                           strokeLinejoin="round"
                         />
                       </svg>
@@ -117,7 +119,7 @@ const FAQ = () => {
                     </span>
                   </div>
                 </AccordionTrigger>
-                <AccordionContent className="px-6 pb-5 pt-0">
+                <AccordionContent className="px-6 pb-3 pt-0">
                   <div className="pl-12 border-l-2 border-[#e9647c]">
                     <p className="text-gray-600 leading-relaxed">
                       {faq.answer}
@@ -128,9 +130,9 @@ const FAQ = () => {
             ))}
           </Accordion>
         </div>
-        
+
         <div className="mt-12 text-center">
-          <button className="px-8 py-3 bg-gradient-to-r from-[#211574] to-[#3a2b9c] text-white rounded-full font-medium hover:shadow-lg transition-all hover:translate-y-[-2px]">
+          <button className="px-6 py-3 bg-gradient-to-r from-[#211574] to-[#3a2b9c] text-white rounded-full font-medium hover:shadow-lg transition-all hover:translate-y-[-2px] text-sm">
             Contact Us for More
           </button>
         </div>

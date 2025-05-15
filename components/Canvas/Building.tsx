@@ -212,7 +212,7 @@ const ScrollContent = () => {
             style={{ textShadow: "0px 0px 2px #000000" }}
           >
             7K+
-            <p className="text-3xl lg:text-5xl font-light md:-mt-3 lg:-mt-10">
+            <p className="text-3xl text-white lg:text-5xl font-light md:-mt-3 lg:-mt-10">
               Visits
             </p>
           </div>
@@ -223,18 +223,18 @@ const ScrollContent = () => {
             style={{ textShadow: "0px 0px 2px #000000" }}
           >
             17+
-            <p className="text-3xl lg:text-5xl font-light md:-mt-3 lg:-mt-10">
+            <p className="text-3xl text-white lg:text-5xl font-light md:-mt-3 lg:-mt-10">
               Years
             </p>
           </div>
         </Section>
         <Section>
           <div
-            className="font-bold text-[3rem] md:text-[5rem] lg:text-[8rem] text-white"
+            className="font-bold text-white text-[3rem] md:text-[5rem] lg:text-[8rem] text-white"
             style={{ textShadow: "0px 0px 2px #000000" }}
           >
             7.2K+
-            <p className="text-3xl lg:text-5xl font-light md:-mt-3 lg:-mt-10">
+            <p className="text-3xl text-white lg:text-5xl font-light md:-mt-3 lg:-mt-10">
               Projects
             </p>
           </div>
@@ -245,7 +245,7 @@ const ScrollContent = () => {
             style={{ textShadow: "0px 0px 2px #000000" }}
           >
             8.5K+
-            <p className="text-3xl lg:text-5xl font-light md:-mt-3 lg:-mt-10">
+            <p className="text-3xl text-white lg:text-5xl font-light md:-mt-3 lg:-mt-10">
               Likes
             </p>
           </div>
@@ -290,77 +290,8 @@ const CloudsGroup = memo(() => {
 
 CloudsGroup.displayName = "CloudsGroup";
 
-// New City Buildings Component
-const CityBuildings = () => {
-  const leftBuildings = useMemo(() => {
-    const buildings = [];
-    const buildingCount = 5;
-    const baseHeight = 50;
-    const baseWidth = 20;
 
-    for (let i = 0; i < buildingCount; i++) {
-      buildings.push(
-        <mesh
-          key={`left-building-${i}`}
-          position={[-50 - i * 30, 0, 100 + i * 20]}
-          rotation-y={Math.PI / 6}
-        >
-          <boxGeometry
-            args={[
-              baseWidth + Math.random() * 10,
-              baseHeight + Math.random() * 30,
-              baseWidth + Math.random() * 10,
-            ]}
-          />
-          <meshStandardMaterial
-            color={`hsl(${210 + i * 10}, 20%, 50%)`}
-            roughness={0.7}
-            metalness={0.3}
-          />
-        </mesh>
-      );
-    }
-    return buildings;
-  }, []);
 
-  const rightBuildings = useMemo(() => {
-    const buildings = [];
-    const buildingCount = 5;
-    const baseHeight = 50;
-    const baseWidth = 20;
-
-    for (let i = 0; i < buildingCount; i++) {
-      buildings.push(
-        <mesh
-          key={`right-building-${i}`}
-          position={[50 + i * 30, 0, 120 + i * 25]}
-          rotation-y={-Math.PI / 6}
-        >
-          <boxGeometry
-            args={[
-              baseWidth + Math.random() * 10,
-              baseHeight + Math.random() * 30,
-              baseWidth + Math.random() * 10,
-            ]}
-          />
-          <meshStandardMaterial
-            color={`hsl(${190 + i * 10}, 20%, 50%)`}
-            roughness={0.7}
-            metalness={0.3}
-          />
-        </mesh>
-      );
-    }
-    return buildings;
-  }, []);
-
-  return (
-    <group>
-      {leftBuildings}
-      {rightBuildings}
-    </group>
-  );
-};
 
 const Building = ({ containerRef, canvasRef }: BuildingProps) => {
   const { state, setState } = useScroll();
@@ -449,8 +380,6 @@ const Building = ({ containerRef, canvasRef }: BuildingProps) => {
               groundColor="#ffffff"
               intensity={1.5}
             />
-
-            <CityBuildings />
             <CloudsGroup />
             <Suspense fallback={null}>
               <Model />

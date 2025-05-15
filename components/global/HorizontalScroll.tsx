@@ -147,10 +147,10 @@ function HorizontalScroll() {
         style={{ paddingRight: "calc(50vw)" }} // Add extra padding at the end
       >
         <div className="flex-shrink-0 w-[300px] md:w-[600px] text-white flex flex-col justify-center items-start">
-          <h2 className="text-2xl lg:text-5xl font-bold mb-6">
+          <h2 className="text-2xl text-white lg:text-5xl font-bold mb-6">
             The Capital Engineering Advantage
           </h2>
-          <p className="mb-8 text-base">
+          <p className="mb-8 text-base text-white">
             As a leading engineering and construction consultancy, we take pride
             in our commitment to excellence, innovation, and precision. Our
             expert team delivers cutting-edge solutions, ensuring superior
@@ -178,7 +178,7 @@ function HorizontalScroll() {
             </div>
             <div className="p-6">
               <h3 className="text-xl font-bold mb-3">{card.title}</h3>
-              <p className="text-gray-600">{card.content}</p>
+              <p className="text-gray-600 text-lg">{card.content}</p>
             </div>
           </div>
         ))}

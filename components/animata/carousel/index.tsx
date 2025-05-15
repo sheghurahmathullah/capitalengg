@@ -123,7 +123,7 @@ export default function ImageCarousel({
               opacity: 1,
             }}
           >
-            <p className={`text-sm h-28 w-full font-camber`}>{item.message}</p>
+            <p className={`text-sm h-28 w-full font-camber text-white`}>{item.message}</p>
             {/* Client Section with Slant */}
             <div
               className="absolute bottom-0 left-0 flex items-center space-x-3 bg-white p-2 text-black rounded-bl-xl"
